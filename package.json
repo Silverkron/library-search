@@ -2,7 +2,7 @@
   "name": "library-search",
   "version": "1.0.0",
   "description": "A lightweight library search system with real-time filtering",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
     "transform": "node scripts/transform.js",
     "serve": "serve public",
