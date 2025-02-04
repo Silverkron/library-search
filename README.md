@@ -1,13 +1,13 @@
 # Aci Sant'Antonio Library - Search System
 
-A free and open-source search system for the catalog of the Municipal Library of Aci Sant'Antonio (Sicily, Italy), created to support the library in its mission of spreading culture and promoting reading.
+A free and open-source search system for the Municipal Library of Aci Sant'Antonio (Sicily, Italy) catalog. Created to support the library in its mission of spreading culture and promoting reading.
 
 ## 🌟 Features
 
 - 🔍 Full-text search across the entire catalog
 - 📚 Specific search by title, author, year, and inventory number
 - ⚡ Fast and responsive interface
-- 📱 Responsive design for all devices
+- 📱 Mobile-friendly design
 - 🔄 Automatic weekly catalog updates
 - 🌐 Automatic deployment to GitHub Pages
 - ♿ Optimized accessibility
@@ -27,7 +27,7 @@ A free and open-source search system for the catalog of the Municipal Library of
 git clone https://github.com/Silverkron/library-search
 
 # Enter directory
-cd biblioteca-acisantantonio
+cd library-search
 
 # Install dependencies
 npm install
@@ -38,7 +38,7 @@ npm run dev
 
 ## 🔄 Update Pipeline
 
-The system updates automatically every week following this process:
+The system automatically updates every week following this process:
 
 1. Downloads the new Excel file from the configured source
 2. Converts the file to an optimized JSON
@@ -48,12 +48,12 @@ The system updates automatically every week following this process:
 ### Pipeline Configuration
 
 1. Configure GitHub secrets:
-    - `EXCEL_URL`: Catalog Excel file URL
+   - `EXCEL_URL`: Catalog Excel file URL
 
 2. Enable GitHub Pages:
-    - Settings > Pages
-    - Select `gh-pages` branch
-    - Save configuration
+   - Settings > Pages
+   - Select `gh-pages` branch
+   - Save configuration
 
 ### Manual Update
 
@@ -79,7 +79,7 @@ git push origin main
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you want to improve the project:
+Contributions are welcome! To improve the project:
 
 1. Fork the repository
 2. Create a branch for your changes
