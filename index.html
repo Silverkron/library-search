@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Aci Sant'Antonio - Catalogo Online | Ricerca Libri</title>
+    <meta name="description" content="Catalogo online della Biblioteca Comunale di Aci Sant'Antonio. Cerca tra migliaia di libri per titolo, autore, anno di pubblicazione e numero di inventario.">
+    <meta name="keywords" content="biblioteca aci sant'antonio, catalogo biblioteca, libri aci sant'antonio, ricerca libri, biblioteca comunale">
+    <meta property="og:title" content="Biblioteca Aci Sant'Antonio - Catalogo Online">
+    <meta property="og:description" content="Cerca tra migliaia di libri della Biblioteca Comunale di Aci Sant'Antonio">
+    <meta property="og:type" content="website">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .transition-all {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen">
+<div class="max-w-7xl mx-auto p-6">
+    <!-- Header Section -->
+    <header class="text-center mb-10">
+        <h1 class="text-4xl font-bold text-gray-800 mb-2">Biblioteca Comunale di Aci Sant'Antonio</h1>
+        <h2 class="text-xl text-gray-600 mb-4">Catalogo Online</h2>
+        <div class="max-w-2xl mx-auto">
+            <p class="text-gray-600 mb-4">
+                Questo sistema di ricerca è un progetto gratuito e open source, creato per supportare la Biblioteca Comunale di Aci Sant'Antonio nella sua missione di diffusione della cultura e promozione della lettura. Esplora il nostro catalogo di migliaia di volumi e scopri il piacere della lettura.
+            </p>
+            <div class="text-sm text-gray-500">
+                <a href="https://github.com/yourusername/library-search" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                    Progetto Open Source su GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Card -->
+    <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Full-text Search -->
+            <div class="space-y-2">
+                <label class="block text-sm font-medium text-gray-700">Ricerca Full-text</label>
+                <div class="relative">
+                    <input
+                            type="text"
+                            id="fulltext-search"
+                            placeholder="Cerca in tutti i campi..."
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                            aria-label="Ricerca full-text nei libri"
+                    >
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Title Search -->
+            <div class="space-y-2">
+                <label class="block text-sm font-medium text-gray-700">Titolo</label>
+                <input
+                        type="text"
+                        id="title-search"
+                        placeholder="Cerca per titolo..."
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        aria-label="Ricerca per titolo del libro"
+                >
+            </div>
+
+            <!-- Year Search -->
+            <div class="space-y-2">
+                <label class="block text-sm font-medium text-gray-700">Anno</label>
+                <input
+                        type="number"
+                        id="year-search"
+                        placeholder="Anno di pubblicazione"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        aria-label="Ricerca per anno di pubblicazione"
+                >
+            </div>
+
+            <!-- Inventory Number -->
+            <div class="space-y-2">
+                <label class="block text-sm font-medium text-gray-700">Numero Inventario</label>
+                <input
+                        type="number"
+                        id="id-search"
+                        placeholder="Numero inventario"
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        aria-label="Ricerca per numero di inventario"
+                >
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loading" class="text-center py-16" role="status">
+        <div class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 shadow-sm transition ease-in-out duration-150 cursor-not-allowed">
+            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            Caricamento catalogo...
+        </div>
+    </div>
+
+    <!-- Results Count -->
+    <div id="results-count" class="mb-4 text-gray-600 hidden" role="status">
+        <span class="font-medium text-blue-600"><span id="count">0</span></span> libri trovati nel catalogo
+    </div>
+
+    <!-- Results Table -->
+    <div id="results-table" class="hidden">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200" role="grid" aria-label="Risultati della ricerca">
+                    <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">N. Inv.</th>
+                        <th scope="col" class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Titolo</th>
+                        <th scope="col" class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Autore</th>
+                        <th scope="col" class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Anno</th>
+                        <th scope="col" class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Editore</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results-body" class="bg-white divide-y divide-gray-200"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination" class="mt-6 flex items-center justify-between hidden">
+        <button
+                id="prev-page"
+                class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                aria-label="Pagina precedente"
+        >
+            <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Precedente
+        </button>
+        <div class="hidden sm:flex justify-center flex-1">
+            <p class="text-sm text-gray-700">
+                Pagina <span class="font-medium text-blue-600" id="current-page">1</span>
+                di <span class="font-medium text-blue-600" id="total-pages">1</span>
+            </p>
+        </div>
+        <button
+                id="next-page"
+                class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                aria-label="Pagina successiva"
+        >
+            Successiva
+            <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-sm text-gray-500">
+        <p>Sistema di ricerca open source per la Biblioteca Comunale di Aci Sant'Antonio</p>
+        <p class="mt-2">
+            <a href="https://github.com/yourusername/library-search" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                Contribuisci su GitHub
+            </a>
+        </p>
+    </footer>
+</div>
+
+<script>
+    // Application state
+    const state = {
+        books: [],
+        searchIndex: null,
+        currentPage: 1,
+        itemsPerPage: 10,
+        filteredBooks: []
+    };
+
+    // Initialize lunr.js for full-text search
+    function initializeSearchIndex(books) {
+        state.searchIndex = lunr(function() {
+            this.field('title');
+            this.field('author');
+            this.field('publisher');
+            this.ref('id');
+
+            books.forEach(book => {
+                this.add({
+                    id: book.id,
+                    title: book.title || '',
+                    author: book.author || '',
+                    publisher: book.publisher || ''
+                });
+            });
+        });
+    }
+
+    // Load data asynchronously
+    async function loadBooks() {
+        try {
+            const response = await fetch('/public/books.json');
+            state.books = await response.json();
+            initializeSearchIndex(state.books);
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('results-table').classList.remove('hidden');
+            document.getElementById('results-count').classList.remove('hidden');
+            document.getElementById('pagination').classList.remove('hidden');
+            updateResults();
+        } catch (error) {
+            console.error('Error loading books:', error);
+            document.getElementById('loading').innerHTML = 'Error loading books.';
+        }
+    }
+
+    // Debounced search function
+    const debouncedSearch = _.debounce(updateResults, 300);
+
+    // Update results based on filters
+    function updateResults() {
+        const fulltextQuery = document.getElementById('fulltext-search').value;
+        const titleQuery = document.getElementById('title-search').value.toLowerCase();
+        const yearQuery = document.getElementById('year-search').value;
+        const idQuery = document.getElementById('id-search').value;
+
+        // Apply filters
+        let filtered = state.books;
+
+        // Full-text search
+        if (fulltextQuery) {
+            const searchResults = state.searchIndex.search(fulltextQuery);
+            const searchIds = new Set(searchResults.map(result => result.ref));
+            filtered = filtered.filter(book => searchIds.has(book.id.toString()));
+        }
+
+        // Exact filters
+        if (titleQuery) {
+            filtered = filtered.filter(book => book.title?.toLowerCase().includes(titleQuery));
+        }
+        if (yearQuery) {
+            filtered = filtered.filter(book => book.year === parseInt(yearQuery));
+        }
+        if (idQuery) {
+            filtered = filtered.filter(book => book.id === parseInt(idQuery));
+        }
+
+        state.filteredBooks = filtered;
+        state.currentPage = 1;
+        renderResults();
+    }
+
+    // Render results in the table
+    function renderResults() {
+        const start = (state.currentPage - 1) * state.itemsPerPage;
+        const end = start + state.itemsPerPage;
+        const pageItems = state.filteredBooks.slice(start, end);
+
+        // Update count
+        document.getElementById('count').textContent = state.filteredBooks.length;
+
+        // Update pagination
+        const totalPages = Math.ceil(state.filteredBooks.length / state.itemsPerPage);
+        document.getElementById('current-page').textContent = state.currentPage;
+        document.getElementById('total-pages').textContent = totalPages;
+        document.getElementById('prev-page').disabled = state.currentPage === 1;
+        document.getElementById('next-page').disabled = state.currentPage === totalPages;
+
+        // Render rows
+        const tbody = document.getElementById('results-body');
+        tbody.innerHTML = pageItems.map(book => `
+                <tr class="hover:bg-gray-50">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm">${book.id}</td>
+                    <td class="px-6 py-4 text-sm">${book.title}</td>
+                    <td class="px-6 py-4 text-sm">${book.author || ''}</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm">${book.year || ''}</td>
+                    <td class="px-6 py-4 text-sm">${book.publisher || ''}</td>
+                </tr>
+            `).join('');
+    }
+
+    // Event listeners
+    document.getElementById('fulltext-search').addEventListener('input', debouncedSearch);
+    document.getElementById('title-search').addEventListener('input', debouncedSearch);
+    document.getElementById('year-search').addEventListener('input', debouncedSearch);
+    document.getElementById('id-search').addEventListener('input', debouncedSearch);
+
+    document.getElementById('prev-page').addEventListener('click', () => {
+        if (state.currentPage > 1) {
+            state.currentPage--;
+            renderResults();
+        }
+    });
+
+    document.getElementById('next-page').addEventListener('click', () => {
+        const totalPages = Math.ceil(state.filteredBooks.length / state.itemsPerPage);
+        if (state.currentPage < totalPages) {
+            state.currentPage++;
+            renderResults();
+        }
+    });
+
+    // Load data on startup
+    loadBooks();
+</script>
+</body>
+</html>

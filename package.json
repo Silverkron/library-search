@@ -1,0 +1,37 @@
+{
+  "name": "library-search",
+  "version": "1.0.0",
+  "description": "A lightweight library search system with real-time filtering",
+  "main": "index.html",
+  "scripts": {
+    "transform": "node scripts/transform.js",
+    "serve": "serve public",
+    "build": "npm run transform",
+    "dev": "npm run transform && npm run serve"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/library-search.git"
+  },
+  "keywords": [
+    "library",
+    "search",
+    "excel",
+    "vanilla-js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/library-search/issues"
+  },
+  "homepage": "https://github.com/yourusername/library-search#readme"
+}
