@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/library-search.git"
+    "url": "git+https://github.com/Silverkron/library-search.git"
   },
   "keywords": [
     "library",
@@ -31,7 +31,7 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/library-search/issues"
+    "url": "https://github.com/Silverkron/library-search/issues"
   },
-  "homepage": "https://github.com/yourusername/library-search#readme"
+  "homepage": "https://github.com/Silverkron/library-search#readme"
 }

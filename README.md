@@ -24,7 +24,7 @@ A free and open-source search system for the catalog of the Municipal Library of
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/biblioteca-acisantantonio
+git clone https://github.com/Silverkron/library-search
 
 # Enter directory
 cd biblioteca-acisantantonio
@@ -105,10 +105,8 @@ This project is released under the MIT License - see the [LICENSE](LICENSE) file
 Special thanks to the Municipal Library of Aci Sant'Antonio for making this project possible and for their commitment to spreading culture in the community.
 
 ## 🔗 Useful Links
-
-- [Live Demo](https://yourusername.github.io/biblioteca-acisantantonio)
+- [Live Demo](https://Silverkron.github.io/library-search)
 - [Aci Sant'Antonio Library](https://www.comune.acisantantonio.ct.it/biblioteca)
-- [Documentation](https://github.com/yourusername/biblioteca-acisantantonio/wiki)
 
 ## 🏛 About the Library
 
