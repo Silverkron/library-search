@@ -1,25 +1,27 @@
 name: Update Library Data
 
 on:
+  push:
+    branches: [ main ]
   schedule:
     - cron: '0 0 * * 1'  # Run every Monday at midnight
-  workflow_dispatch:      # Allow manual trigger
+  workflow_dispatch:
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Create directories
         run: |
@@ -31,15 +33,12 @@ jobs:
           curl -L -o "file/library.xls" "${{ secrets.EXCEL_URL }}"
 
       - name: Transform Excel to JSON
-        run: npm run transform
+        run: node scripts/transform.js
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          commit-message: Update library data
-          title: 'chore: update library data [automated]'
-          body: |
-            Automated update of library data.
-            - Updated books.json from latest Excel file
-          branch: update-library-data
-          delete-branch: true
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add public/books.json
+          git commit -m "chore: update library data" || exit 0
+          git push
