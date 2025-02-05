@@ -40,7 +40,7 @@
 
     <!-- Search Card -->
     <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Full-text Search -->
             <div class="space-y-2">
                 <label class="block text-sm font-medium text-gray-700">Ricerca Full-text</label>
@@ -58,18 +58,6 @@
                         </svg>
                     </div>
                 </div>
-            </div>
-
-            <!-- Title Search -->
-            <div class="space-y-2">
-                <label class="block text-sm font-medium text-gray-700">Titolo</label>
-                <input
-                        type="text"
-                        id="title-search"
-                        placeholder="Cerca per titolo..."
-                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                        aria-label="Ricerca per titolo del libro"
-                >
             </div>
 
             <!-- Year Search -->
@@ -167,11 +155,24 @@
     <!-- Footer -->
     <footer class="mt-12 text-center text-sm text-gray-500">
         <p>Sistema di ricerca open source per la Biblioteca Comunale di Aci Sant'Antonio</p>
-        <p class="mt-2">
-            <a href="https://github.com/Silverkron/library-search" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
-                Contribuisci su GitHub
-            </a>
-        </p>
+        <div class="mt-4 space-y-2">
+            <p class="text-gray-600">
+                La Biblioteca Comunale di Aci Sant'Antonio è un importante punto di riferimento culturale del territorio.
+                Offre servizi di consultazione, prestito libri e organizza eventi culturali per la comunità.
+            </p>
+            <p class="space-x-4">
+                <a href="https://github.com/Silverkron/library-search" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                    Contribuisci su GitHub
+                </a>
+                <span class="text-gray-400">|</span>
+                <a href="https://www.comune.acisantantonio.ct.it/it-it/servizi/vivere-il-tempo-libero-e-la-cultura-c/biblioteca-132-35-1-bab4c5adfc74c53e0771c83e6543fd2a"
+                   class="text-blue-600 hover:underline"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Visita il sito della Biblioteca
+                </a>
+            </p>
+        </div>
     </footer>
 </div>
 
@@ -227,7 +228,6 @@
     // Update results based on filters
     function updateResults() {
         const fulltextQuery = document.getElementById('fulltext-search').value;
-        const titleQuery = document.getElementById('title-search').value.toLowerCase();
         const yearQuery = document.getElementById('year-search').value;
         const idQuery = document.getElementById('id-search').value;
 
@@ -242,9 +242,6 @@
         }
 
         // Exact filters
-        if (titleQuery) {
-            filtered = filtered.filter(book => book.title?.toLowerCase().includes(titleQuery));
-        }
         if (yearQuery) {
             filtered = filtered.filter(book => book.year === parseInt(yearQuery));
         }
@@ -276,19 +273,18 @@
         // Render rows
         const tbody = document.getElementById('results-body');
         tbody.innerHTML = pageItems.map(book => `
-                <tr class="hover:bg-gray-50">
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">${book.id}</td>
-                    <td class="px-6 py-4 text-sm">${book.title}</td>
-                    <td class="px-6 py-4 text-sm">${book.author || ''}</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm">${book.year || ''}</td>
-                    <td class="px-6 py-4 text-sm">${book.publisher || ''}</td>
-                </tr>
-            `).join('');
+            <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm">${book.id}</td>
+                <td class="px-6 py-4 text-sm">${book.title}</td>
+                <td class="px-6 py-4 text-sm">${book.author || ''}</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm">${book.year || ''}</td>
+                <td class="px-6 py-4 text-sm">${book.publisher || ''}</td>
+            </tr>
+        `).join('');
     }
 
     // Event listeners
     document.getElementById('fulltext-search').addEventListener('input', debouncedSearch);
-    document.getElementById('title-search').addEventListener('input', debouncedSearch);
     document.getElementById('year-search').addEventListener('input', debouncedSearch);
     document.getElementById('id-search').addEventListener('input', debouncedSearch);
 
