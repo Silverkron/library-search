@@ -208,7 +208,7 @@
     // Load data asynchronously
     async function loadBooks() {
         try {
-            const response = await fetch('/library-search/books.json');
+            const response = await fetch('./books.json');
             state.books = await response.json();
             initializeSearchIndex(state.books);
             document.getElementById('loading').classList.add('hidden');
