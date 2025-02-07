@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Aci Sant'Antonio - Catalogo Online | Ricerca Libri</title>
-    <meta name="description" content="Catalogo online della Biblioteca Comunale di Aci Sant'Antonio. Cerca tra migliaia di libri per titolo, autore, anno di pubblicazione e numero di inventario.">
-    <meta name="keywords" content="biblioteca aci sant'antonio, catalogo biblioteca, libri aci sant'antonio, ricerca libri, biblioteca comunale">
+    <meta name="description"
+          content="Catalogo online della Biblioteca Comunale di Aci Sant'Antonio. Cerca tra migliaia di libri per titolo, autore, anno di pubblicazione e numero di inventario.">
+    <meta name="keywords"
+          content="biblioteca aci sant'antonio, catalogo biblioteca, libri aci sant'antonio, ricerca libri, biblioteca comunale">
     <meta property="og:title" content="Biblioteca Aci Sant'Antonio - Catalogo Online">
     <meta property="og:description" content="Cerca tra migliaia di libri della Biblioteca Comunale di Aci Sant'Antonio">
     <meta property="og:type" content="website">
@@ -29,10 +31,13 @@
         <h2 class="text-xl text-gray-600 mb-4">Catalogo Online</h2>
         <div class="max-w-2xl mx-auto">
             <p class="text-gray-600 mb-4">
-                Questo sistema di ricerca è un progetto gratuito e open source, creato per supportare la Biblioteca Comunale di Aci Sant'Antonio nella sua missione di diffusione della cultura e promozione della lettura. Esplora il nostro catalogo di migliaia di volumi e scopri il piacere della lettura.
+                Questo sistema di ricerca è un progetto gratuito e open source, creato per supportare la Biblioteca
+                Comunale di Aci Sant'Antonio nella sua missione di diffusione della cultura e promozione della lettura.
+                Esplora il nostro catalogo di migliaia di volumi e scopri il piacere della lettura.
             </p>
             <div class="text-sm text-gray-500">
-                <a href="https://github.com/Silverkron/library-search" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Silverkron/library-search" class="text-blue-600 hover:underline"
+                   target="_blank" rel="noopener noreferrer">
                     Progetto Open Source su GitHub
                 </a>
             </div>
@@ -55,7 +60,8 @@
                     >
                     <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                         <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                         </svg>
                     </div>
                 </div>
@@ -90,9 +96,11 @@
     <!-- Loading State -->
     <div id="loading" class="text-center py-16" role="status">
         <div class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 shadow-sm transition ease-in-out duration-150 cursor-not-allowed">
-            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24">
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                <path class="opacity-75" fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
             </svg>
             Caricamento catalogo...
         </div>
@@ -110,11 +118,25 @@
                 <table class="min-w-full divide-y divide-gray-200" role="grid" aria-label="Risultati della ricerca">
                     <thead class="bg-gray-50">
                     <tr>
-                        <th scope="col" class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">N. Inv.</th>
-                        <th scope="col" class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Titolo</th>
-                        <th scope="col" class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Autore</th>
-                        <th scope="col" class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Anno</th>
-                        <th scope="col" class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Editore</th>
+                        <th scope="col"
+                            class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">N.
+                            Inv.
+                        </th>
+                        <th scope="col"
+                            class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Titolo
+                        </th>
+                        <th scope="col"
+                            class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Autore
+                        </th>
+                        <th scope="col"
+                            class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Anno
+                        </th>
+                        <th scope="col"
+                            class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Editore
+                        </th>
                     </tr>
                     </thead>
                     <tbody id="results-body" class="bg-white divide-y divide-gray-200">
@@ -128,7 +150,8 @@
 
                     <tr class="hover:bg-gray-50">
                         <td class="px-6 py-4 whitespace-nowrap text-sm">4981</td>
-                        <td class="px-6 py-4 text-sm">Breve storia dei materiali scrittori dalle origini al XV secolo</td>
+                        <td class="px-6 py-4 text-sm">Breve storia dei materiali scrittori dalle origini al XV secolo
+                        </td>
                         <td class="px-6 py-4 text-sm">Pastena Carlo</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">2001</td>
                         <td class="px-6 py-4 text-sm">regione siciliana.</td>
@@ -152,7 +175,7 @@
 
                     <tr class="hover:bg-gray-50">
                         <td class="px-6 py-4 whitespace-nowrap text-sm">462</td>
-                        <td class="px-6 py-4 text-sm">Una religione antropologica </td>
+                        <td class="px-6 py-4 text-sm">Una religione antropologica</td>
                         <td class="px-6 py-4 text-sm">Stagnitta Antonino</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">1979</td>
                         <td class="px-6 py-4 text-sm">E.D.I.</td>
@@ -211,7 +234,7 @@
                 aria-label="Pagina precedente"
         >
             <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
             </svg>
             Precedente
         </button>
@@ -228,7 +251,7 @@
         >
             Successiva
             <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
         </button>
     </div>
@@ -238,11 +261,13 @@
         <p>Sistema di ricerca open source per la Biblioteca Comunale di Aci Sant'Antonio</p>
         <div class="mt-4 space-y-2">
             <p class="text-gray-600">
-                La Biblioteca Comunale di Aci Sant'Antonio è un importante punto di riferimento culturale del territorio.
+                La Biblioteca Comunale di Aci Sant'Antonio è un importante punto di riferimento culturale del
+                territorio.
                 Offre servizi di consultazione, prestito libri e organizza eventi culturali per la comunità.
             </p>
             <p class="space-x-4">
-                <a href="https://github.com/Silverkron/library-search" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Silverkron/library-search" class="text-blue-600 hover:underline"
+                   target="_blank" rel="noopener noreferrer">
                     Contribuisci su GitHub
                 </a>
                 <span class="text-gray-400">|</span>
@@ -272,20 +297,49 @@
     // Debounced search function
     const debouncedSearch = _.debounce(updateResults, 300);
 
+    function wildcardFn(token) {
+        if (token.toString().length > 2) {
+            return token.update(function (str) {
+                return `${str}*`;
+            });
+        }
+        return token;
+    }
+
     // Initialize lunr.js for full-text search
     function initializeSearchIndex(books) {
-        state.searchIndex = lunr(function() {
-            this.field('title');
-            this.field('author');
-            this.field('publisher');
+        // Configura il pipeline di Lunr per gestire meglio le ricerche parziali
+        lunr.Pipeline.registerFunction(wildcardFn, 'wildcard');
+
+        state.searchIndex = lunr(function () {
+            // Configura i campi con boost per dare più peso al titolo
+            this.field('title', {boost: 10});
+            this.field('author', {boost: 5});
+            this.field('publisher', {boost: 2});
+
+            // Aggiungi un campo di ricerca combinato
+            this.field('all');
+
+            // Disabilita lo stemming aggressivo
+            this.pipeline.remove(lunr.stemmer);
+            this.searchPipeline.remove(lunr.stemmer);
+
+            // Aggiungi la funzione wildcard al pipeline
+            this.pipeline.add(wildcardFn);
+            this.searchPipeline.add(wildcardFn);
+
             this.ref('id');
 
             books.forEach(book => {
+                // Crea un campo combinato per la ricerca
+                const all = `${book.title || ''} ${book.author || ''} ${book.publisher || ''}`.toLowerCase();
+
                 this.add({
                     id: book.id,
                     title: book.title || '',
                     author: book.author || '',
-                    publisher: book.publisher || ''
+                    publisher: book.publisher || '',
+                    all: all
                 });
             });
         });
@@ -312,6 +366,7 @@
             // Carichiamo i dati in background
             const response = await fetch('./books.json');
             state.books = await response.json();
+            state.filteredBooks = state.books; // Inizializziamo filteredBooks con tutti i libri
             initializeSearchIndex(state.books);
 
             // Aggiorniamo lo stato
@@ -323,19 +378,60 @@
             } else {
                 // Aggiorniamo il conteggio totale
                 document.getElementById('count').textContent = state.books.length;
+
                 // Aggiorniamo la paginazione
                 const totalPages = Math.ceil(state.books.length / state.itemsPerPage);
                 document.getElementById('total-pages').textContent = totalPages;
+
+                // Aggiorniamo lo stato dei pulsanti
+                document.getElementById('prev-page').disabled = state.currentPage === 1;
+                document.getElementById('next-page').disabled = state.currentPage === totalPages;
             }
         } catch (error) {
             console.error('Error loading books:', error);
-            // Non mostriamo l'errore all'utente dato che ha comunque dei risultati visibili
+        }
+    }
+
+    function performSearch(query) {
+        if (!query || query.length < 2) {
+            return state.books;
+        }
+
+        try {
+            // Divide la query in termini
+            const terms = query.toLowerCase().split(/\s+/);
+
+            // Crea tre tipi di query:
+            // 1. Termini originali con wildcard
+            const originalQuery = terms.map(term => `*${term}*`).join(' ');
+
+            // 2. Termini concatenati (per trovare parole unite)
+            const concatenatedTerm = terms.join('');
+            const concatenatedQuery = `*${concatenatedTerm}*`;
+
+            // 3. Termini adiacenti (per trovare parole vicine)
+            const adjacentQuery = terms.join(' ');
+
+            // Combina le query con OR
+            const finalQuery = `${originalQuery} OR all:${concatenatedQuery} OR all:${adjacentQuery}`;
+
+            return state.searchIndex.search(finalQuery);
+        } catch (e) {
+            console.error('Errore durante la ricerca:', e);
+            // Fallback a ricerca semplice in caso di errore
+            return state.books.filter(book => {
+                const searchText = (book.title + ' ' + book.author + ' ' + book.publisher).toLowerCase();
+                const concatenatedQuery = query.toLowerCase().replace(/\s+/g, '');
+                const searchTextNoSpaces = searchText.replace(/\s+/g, '');
+
+                return query.toLowerCase().split(/\s+/).every(term => searchText.includes(term)) ||
+                    searchTextNoSpaces.includes(concatenatedQuery);
+            });
         }
     }
 
     // Update results based on filters
     function updateResults() {
-        // Se il database non è ancora caricato e l'utente sta cercando
         if (!state.isLoaded && hasActiveFilters()) {
             const tbody = document.getElementById('results-body');
             tbody.innerHTML = `
@@ -358,7 +454,6 @@
         const yearQuery = document.getElementById('year-search').value;
         const idQuery = document.getElementById('id-search').value;
 
-        // Se non ci sono filtri e il database non è caricato, manteniamo i risultati statici
         if (!hasActiveFilters() && !state.isLoaded) {
             return;
         }
@@ -366,7 +461,7 @@
         let filtered = state.books;
 
         if (fulltextQuery) {
-            const searchResults = state.searchIndex.search(fulltextQuery);
+            const searchResults = performSearch(fulltextQuery);
             const searchIds = new Set(searchResults.map(result => result.ref));
             filtered = filtered.filter(book => searchIds.has(book.id.toString()));
         }
@@ -386,7 +481,18 @@
     // Render results in the table
     function renderResults() {
         if (!state.isLoaded && !hasActiveFilters()) {
-            return; // Manteniamo i risultati statici
+            // Se non siamo caricati e non ci sono filtri, impostiamo filteredBooks ai dati statici
+            const staticRows = document.getElementById('results-body').getElementsByTagName('tr');
+            state.filteredBooks = Array.from(staticRows).map(row => {
+                const cells = row.getElementsByTagName('td');
+                return {
+                    id: parseInt(cells[0].textContent),
+                    title: cells[1].textContent,
+                    author: cells[2].textContent,
+                    year: parseInt(cells[3].textContent),
+                    publisher: cells[4].textContent
+                };
+            });
         }
 
         const start = (state.currentPage - 1) * state.itemsPerPage;
@@ -400,6 +506,8 @@
         const totalPages = Math.ceil(state.filteredBooks.length / state.itemsPerPage);
         document.getElementById('current-page').textContent = state.currentPage;
         document.getElementById('total-pages').textContent = totalPages;
+
+        // Aggiorniamo lo stato dei pulsanti
         document.getElementById('prev-page').disabled = state.currentPage === 1;
         document.getElementById('next-page').disabled = state.currentPage === totalPages;
 
