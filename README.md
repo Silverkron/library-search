@@ -73,8 +73,7 @@ git push origin main
 ├── .github/workflows/    # Automation pipeline
 ├── file/                # Catalog Excel file
 ├── public/              # Static files and JSON
-├── scripts/             # Transformation scripts
-└── index.html          # User interface
+└── scripts/             # Transformation scripts
 ```
 
 ## 🤝 Contributing
