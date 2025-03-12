@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aci Sant'Antonio Library - Online Catalog | Book Search</title>
+    <title>Biblioteca Aci Sant'Antonio - Catalogo Online | Ricerca Libri</title>
     <meta name="description"
-          content="Online catalog of the Municipal Library of Aci Sant'Antonio. Search thousands of books by title, author, publication year and inventory number.">
+          content="Catalogo online della Biblioteca Comunale di Aci Sant'Antonio. Cerca tra migliaia di libri per titolo, autore, anno di pubblicazione e numero di inventario.">
     <meta name="keywords"
-          content="aci sant'antonio library, library catalog, aci sant'antonio books, book search, municipal library">
+          content="biblioteca aci sant'antonio, catalogo biblioteca, libri aci sant'antonio, ricerca libri, biblioteca comunale">
 
-    <link rel="canonical" href="https://biblioteca.acisantantonio.org/">
+    <link rel="canonical" href="https://biblioteca.acisantantonio.org/it/">
     <link rel="alternate" hreflang="it" href="https://biblioteca.acisantantonio.org/it/">
     <link rel="alternate" hreflang="en" href="https://biblioteca.acisantantonio.org/">
     <link rel="alternate" hreflang="x-default" href="https://biblioteca.acisantantonio.org/">
 
-    <meta property="og:title" content="Aci Sant'Antonio Library - Online Catalog">
-    <meta property="og:description" content="Search thousands of books in the Municipal Library of Aci Sant'Antonio">
+    <meta property="og:title" content="Biblioteca Aci Sant'Antonio - Catalogo Online">
+    <meta property="og:description" content="Cerca tra migliaia di libri della Biblioteca Comunale di Aci Sant'Antonio">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://biblioteca.acisantantonio.org/">
+    <meta property="og:url" content="https://biblioteca.acisantantonio.org/it/">
     <meta property="og:image" content="https://biblioteca.acisantantonio.org/ogimage.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
-    <meta name="twitter:title" content="Aci Sant'Antonio Library - Online Catalog">
-    <meta name="twitter:description" content="Search thousands of books in the Municipal Library of Aci Sant'Antonio">
+    <meta name="twitter:title" content="Biblioteca Aci Sant'Antonio - Catalogo Online">
+    <meta name="twitter:description" content="Cerca tra migliaia di libri della Biblioteca Comunale di Aci Sant'Antonio">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://biblioteca.acisantantonio.org/ogimage.png">
 
-    <link rel="icon" type="image/png" href="./favicon.png">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -44,34 +44,34 @@
 <div class="max-w-7xl mx-auto p-6">
     <!-- Header Section -->
     <header class="text-center mb-10">
-        <h1 class="text-4xl font-bold text-gray-800 mb-2">Aci Sant'Antonio Municipal Library</h1>
-        <h2 class="text-xl text-gray-600 mb-4">Online Catalog</h2>
+        <h1 class="text-4xl font-bold text-gray-800 mb-2">Biblioteca Comunale di Aci Sant'Antonio</h1>
+        <h2 class="text-xl text-gray-600 mb-4">Catalogo Online</h2>
         <div class="max-w-2xl mx-auto">
             <p class="text-gray-600 mb-4">
-                This search system is a free and open source project, created to support the Municipal
-                Library of Aci Sant'Antonio in its mission of spreading culture and promoting reading.
-                Explore our catalog of thousands of volumes and discover the pleasure of reading.
+                Questo sistema di ricerca è un progetto gratuito e open source, creato per supportare la Biblioteca
+                Comunale di Aci Sant'Antonio nella sua missione di diffusione della cultura e promozione della lettura.
+                Esplora il nostro catalogo di migliaia di volumi e scopri il piacere della lettura.
             </p>
             <div class="text-sm text-gray-500 flex justify-center space-x-4">
-                <a href="./hours-and-contacts" class="text-blue-600 hover:underline"
-                   title="Hours and contacts of the Aci Sant'Antonio Library">
-                    Hours and Contacts
+                <a href="./orari-e-contatti" class="text-blue-600 hover:underline"
+                   title="Orari e contatti della Biblioteca di Aci Sant'Antonio">
+                    Orari e Contatti
                 </a>
                 <span class="text-gray-400">|</span>
-                <a href="./location" class="text-blue-600 hover:underline"
-                   title="Where to find the Aci Sant'Antonio Library">
-                    Location
+                <a href="./dove-si-trova" class="text-blue-600 hover:underline"
+                   title="Dove si trova la Biblioteca di Aci Sant'Antonio">
+                    Dove Si Trova
                 </a>
                 <span class="text-gray-400">|</span>
                 <a href="https://github.com/Silverkron/library-search" class="text-blue-600 hover:underline"
-                   title="GitHub page for the 'Library Search' repository for Aci Sant'Antonio"
+                   title="Pagina Github al repository 'Library Search' per Aci Sant'Antonio"
                    target="_blank" rel="noopener noreferrer">
-                    Open Source Project on GitHub
+                    Progetto Open Source su GitHub
                 </a>
                 <span class="text-gray-400">|</span>
-                <a href="./it/" class="text-blue-600 hover:underline"
-                   title="Versione italiana">
-                    Italiano
+                <a href="/" class="text-blue-600 hover:underline"
+                   title="English version">
+                    English
                 </a>
             </div>
         </div>
@@ -82,14 +82,14 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Full-text Search -->
             <div class="space-y-2">
-                <label class="block text-sm font-medium text-gray-700">Full-text Search</label>
+                <label class="block text-sm font-medium text-gray-700">Ricerca Full-text</label>
                 <div class="relative">
                     <input
                             type="text"
                             id="fulltext-search"
-                            placeholder="Search all fields..."
+                            placeholder="Cerca in tutti i campi..."
                             class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                            aria-label="Full-text search in books"
+                            aria-label="Ricerca full-text nei libri"
                     >
                     <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                         <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -102,25 +102,25 @@
 
             <!-- Year Search -->
             <div class="space-y-2">
-                <label class="block text-sm font-medium text-gray-700">Year</label>
+                <label class="block text-sm font-medium text-gray-700">Anno</label>
                 <input
                         type="number"
                         id="year-search"
-                        placeholder="Publication year"
+                        placeholder="Anno di pubblicazione"
                         class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                        aria-label="Search by publication year"
+                        aria-label="Ricerca per anno di pubblicazione"
                 >
             </div>
 
             <!-- Inventory Number -->
             <div class="space-y-2">
-                <label class="block text-sm font-medium text-gray-700">Inventory Number</label>
+                <label class="block text-sm font-medium text-gray-700">Numero Inventario</label>
                 <input
                         type="number"
                         id="id-search"
-                        placeholder="Inventory number"
+                        placeholder="Numero inventario"
                         class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                        aria-label="Search by inventory number"
+                        aria-label="Ricerca per numero di inventario"
                 >
             </div>
         </div>
@@ -135,40 +135,40 @@
                 <path class="opacity-75" fill="currentColor"
                       d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
             </svg>
-            Loading catalog...
+            Caricamento catalogo...
         </div>
     </div>
 
     <!-- Results Count -->
     <div id="results-count" class="mb-4 text-gray-600 hidden" role="status">
-        <span class="font-medium text-blue-600"><span id="count">0</span></span> books found in the catalog
+        <span class="font-medium text-blue-600"><span id="count">0</span></span> libri trovati nel catalogo
     </div>
 
     <!-- Results Table -->
     <div id="results-table" class="hidden">
         <div class="bg-white rounded-xl shadow-lg overflow-hidden">
             <div class="overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200" role="grid" aria-label="Search results">
+                <table class="min-w-full divide-y divide-gray-200" role="grid" aria-label="Risultati della ricerca">
                     <thead class="bg-gray-50">
                     <tr>
                         <th scope="col"
-                            class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Inv.
-                            No.
+                            class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">N.
+                            Inv.
                         </th>
                         <th scope="col"
                             class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Title
+                            Titolo
                         </th>
                         <th scope="col"
                             class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Author
+                            Autore
                         </th>
                         <th scope="col"
-                            class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year
+                            class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Anno
                         </th>
                         <th scope="col"
                             class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Publisher
+                            Editore
                         </th>
                     </tr>
                     </thead>
@@ -264,25 +264,25 @@
         <button
                 id="prev-page"
                 class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
-                aria-label="Previous page"
+                aria-label="Pagina precedente"
         >
             <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
             </svg>
-            Previous
+            Precedente
         </button>
         <div class="hidden sm:flex justify-center flex-1">
             <p class="text-sm text-gray-700">
-                Page <span class="font-medium text-blue-600" id="current-page">1</span>
-                of <span class="font-medium text-blue-600" id="total-pages">1</span>
+                Pagina <span class="font-medium text-blue-600" id="current-page">1</span>
+                di <span class="font-medium text-blue-600" id="total-pages">1</span>
             </p>
         </div>
         <button
                 id="next-page"
                 class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
-                aria-label="Next page"
+                aria-label="Pagina successiva"
         >
-            Next
+            Successiva
             <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
             </svg>
@@ -291,25 +291,26 @@
 
     <!-- Footer -->
     <footer class="mt-12 text-center text-sm text-gray-500">
-        <p>Open source search system for the Municipal Library of Aci Sant'Antonio</p>
+        <p>Sistema di ricerca open source per la Biblioteca Comunale di Aci Sant'Antonio</p>
         <div class="mt-4 space-y-2">
             <p class="text-gray-600">
-                The Municipal Library of Aci Sant'Antonio is an important cultural reference point for the territory.
-                It offers consultation services, book loans, and organizes cultural events for the community.
+                La Biblioteca Comunale di Aci Sant'Antonio è un importante punto di riferimento culturale del
+                territorio.
+                Offre servizi di consultazione, prestito libri e organizza eventi culturali per la comunità.
             </p>
             <p class="space-x-4">
                 <a href="https://github.com/Silverkron/library-search" class="text-blue-600 hover:underline"
-                   title="GitHub page for the 'Library Search' repository for Aci Sant'Antonio"
+                   title="Pagina Github al repository 'Library Search' per Aci Sant'Antonio"
                    target="_blank" rel="noopener noreferrer">
-                    Contribute on GitHub
+                    Contribuisci su GitHub
                 </a>
                 <span class="text-gray-400">|</span>
                 <a href="https://www.comune.acisantantonio.ct.it/it-it/servizi/vivere-il-tempo-libero-e-la-cultura-c/biblioteca-132-35-1-bab4c5adfc74c53e0771c83e6543fd2a"
                    class="text-blue-600 hover:underline"
-                   title="Official page of the Aci Sant'Antonio Library"
+                   title="Pagina della Biblioteca di Aci Sant'Antonio"
                    target="_blank"
                    rel="noopener noreferrer">
-                    Visit the Library website
+                    Visita il sito della Biblioteca
                 </a>
             </p>
         </div>
@@ -410,7 +411,7 @@
             document.getElementById('pagination').classList.remove('hidden');
 
             // Carichiamo i dati in background
-            const response = await fetch('./books.json');
+            const response = await fetch('../books.json');
             state.books = await response.json();
             state.filteredBooks = state.books; // Inizializziamo filteredBooks con tutti i libri
             initializeSearchIndex(state.books);
@@ -488,7 +489,7 @@
                             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
-                        <span>Loading database...</span>
+                        <span>Caricamento database in corso...</span>
                     </div>
                 </td>
             </tr>
@@ -563,7 +564,7 @@
             tbody.innerHTML = `
             <tr>
                 <td colspan="5" class="px-6 py-4 text-center text-sm text-gray-500">
-                    No results found
+                    Nessun risultato trovato
                 </td>
             </tr>
         `;
