@@ -36,10 +36,6 @@ jobs:
           mkdir -p file
           mkdir -p public
 
-      - name: Download Excel file
-        run: |
-          curl -L -o "file/library.xls" "${{ secrets.EXCEL_URL }}"
-
       - name: Transform Excel to JSON
         run: node scripts/transform.js
 
