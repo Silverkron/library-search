@@ -41,11 +41,28 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen">
-<div class="max-w-7xl mx-auto p-6">
+<div class="max-w-7xl mx-auto p-6" itemscope itemtype="https://schema.org/Library">
     <!-- Header Section -->
     <header class="text-center mb-10">
-        <h1 class="text-4xl font-bold text-gray-800 mb-2">Aci Sant'Antonio Municipal Library</h1>
+        <h1 class="text-4xl font-bold text-gray-800 mb-2" itemprop="name">Aci Sant'Antonio Municipal Library</h1>
         <h2 class="text-xl text-gray-600 mb-4">Online Catalog</h2>
+        
+        <!-- Hidden microdata for library information -->
+        <div style="display: none;">
+            <span itemprop="description">Municipal Library of Aci Sant'Antonio with over 10,000 books including fiction, non-fiction, local history, children's books, and reference works.</span>
+            <span itemprop="url">https://biblioteca.acisantantonio.org</span>
+            <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">Via Vittorio Emanuele, 101</span>
+                <span itemprop="addressLocality">Aci Sant'Antonio</span>
+                <span itemprop="postalCode">95025</span>
+                <span itemprop="addressRegion">CT</span>
+                <span itemprop="addressCountry">IT</span>
+            </div>
+            <span itemprop="telephone">095 7010094</span>
+            <span itemprop="email">comune-acisantantonio@legalmail.it</span>
+            <div itemprop="openingHours" content="Mo-Fr 09:00-12:30">Monday-Friday 09:00-12:30</div>
+            <div itemprop="openingHours" content="Th 14:30-18:00">Thursday 14:30-18:00</div>
+        </div>
         <div class="max-w-2xl mx-auto">
             <p class="text-gray-600 mb-4">
                 This search system is a free and open source project, created to support the Municipal
@@ -290,45 +307,53 @@
     </div>
 
     <!-- FAQ Section -->
-    <section class="mt-12 mb-8">
+    <section class="mt-12 mb-8" itemscope itemtype="https://schema.org/FAQPage">
         <div class="bg-white rounded-xl shadow-lg p-6">
             <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Frequently Asked Questions</h2>
             <div class="space-y-4">
-                <details class="border-b border-gray-200 pb-4">
-                    <summary class="cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-600">
-                        How many books does the Aci Sant'Antonio Library have?
-                    </summary>
-                    <div class="mt-3 text-gray-600">
-                        The Municipal Library of Aci Sant'Antonio has a catalog with over 10,000 volumes, including fiction, non-fiction, local history, children's and young adult books, and reference works. The collection is constantly updated and can be consulted online through the digital catalog accessible from this page.
-                    </div>
-                </details>
+                <div class="border-b border-gray-200 pb-4" itemscope itemtype="https://schema.org/Question" itemprop="mainEntity">
+                    <details>
+                        <summary class="cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-600" itemprop="name">
+                            How many books does the Aci Sant'Antonio Library have?
+                        </summary>
+                        <div class="mt-3 text-gray-600" itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                            <div itemprop="text">The Municipal Library of Aci Sant'Antonio has a catalog with over 10,000 volumes, including fiction, non-fiction, local history, children's and young adult books, and reference works. The collection is constantly updated and can be consulted online through the digital catalog accessible from this page.</div>
+                        </div>
+                    </details>
+                </div>
                 
-                <details class="border-b border-gray-200 pb-4">
-                    <summary class="cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-600">
-                        Where can I consult the library's online catalog?
-                    </summary>
-                    <div class="mt-3 text-gray-600">
-                        The online catalog can be consulted directly from the homepage, through the internal search engine. You can search for a book by title, author, publication year, or inventory number.
-                    </div>
-                </details>
+                <div class="border-b border-gray-200 pb-4" itemscope itemtype="https://schema.org/Question" itemprop="mainEntity">
+                    <details>
+                        <summary class="cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-600" itemprop="name">
+                            Where can I consult the library's online catalog?
+                        </summary>
+                        <div class="mt-3 text-gray-600" itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                            <div itemprop="text">The online catalog can be consulted directly from the homepage, through the internal search engine. You can search for a book by title, author, publication year, or inventory number.</div>
+                        </div>
+                    </details>
+                </div>
                 
-                <details class="border-b border-gray-200 pb-4">
-                    <summary class="cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-600">
-                        Can I borrow books from the library?
-                    </summary>
-                    <div class="mt-3 text-gray-600">
-                        Yes, the library offers a free lending service for all citizens. You just need to register with an identity document. The loan duration and return procedures are indicated on-site.
-                    </div>
-                </details>
+                <div class="border-b border-gray-200 pb-4" itemscope itemtype="https://schema.org/Question" itemprop="mainEntity">
+                    <details>
+                        <summary class="cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-600" itemprop="name">
+                            Can I borrow books from the library?
+                        </summary>
+                        <div class="mt-3 text-gray-600" itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                            <div itemprop="text">Yes, the library offers a free lending service for all citizens. You just need to register with an identity document. The loan duration and return procedures are indicated on-site.</div>
+                        </div>
+                    </details>
+                </div>
                 
-                <details class="border-b border-gray-200 pb-4">
-                    <summary class="cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-600">
-                        What services does the municipal library of Aci Sant'Antonio offer?
-                    </summary>
-                    <div class="mt-3 text-gray-600">
-                        In addition to book consultation and lending, the library organizes cultural events, children's activities, meetings with authors, temporary exhibitions, and reading aloud sessions.
-                    </div>
-                </details>
+                <div class="border-b border-gray-200 pb-4" itemscope itemtype="https://schema.org/Question" itemprop="mainEntity">
+                    <details>
+                        <summary class="cursor-pointer text-lg font-medium text-gray-700 hover:text-blue-600" itemprop="name">
+                            What services does the municipal library of Aci Sant'Antonio offer?
+                        </summary>
+                        <div class="mt-3 text-gray-600" itemscope itemtype="https://schema.org/Answer" itemprop="acceptedAnswer">
+                            <div itemprop="text">In addition to book consultation and lending, the library organizes cultural events, children's activities, meetings with authors, temporary exhibitions, and reading aloud sessions.</div>
+                        </div>
+                    </details>
+                </div>
             </div>
         </div>
     </section>

@@ -41,11 +41,28 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen">
-<div class="max-w-7xl mx-auto p-6">
+<div class="max-w-7xl mx-auto p-6" itemscope itemtype="https://schema.org/Library">
     <!-- Header Section -->
     <header class="text-center mb-10">
-        <h1 class="text-4xl font-bold text-gray-800 mb-2">Biblioteca Comunale di Aci Sant'Antonio</h1>
+        <h1 class="text-4xl font-bold text-gray-800 mb-2" itemprop="name">Biblioteca Comunale di Aci Sant'Antonio</h1>
         <h2 class="text-xl text-gray-600 mb-4">Catalogo Online</h2>
+        
+        <!-- Hidden microdata for library information -->
+        <div style="display: none;">
+            <span itemprop="description">Biblioteca Comunale di Aci Sant'Antonio con oltre 10.000 volumi tra narrativa, saggistica, storia locale, testi per bambini e ragazzi, e opere di consultazione.</span>
+            <span itemprop="url">https://biblioteca.acisantantonio.org</span>
+            <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">Via Vittorio Emanuele, 101</span>
+                <span itemprop="addressLocality">Aci Sant'Antonio</span>
+                <span itemprop="postalCode">95025</span>
+                <span itemprop="addressRegion">CT</span>
+                <span itemprop="addressCountry">IT</span>
+            </div>
+            <span itemprop="telephone">095 7010094</span>
+            <span itemprop="email">comune-acisantantonio@legalmail.it</span>
+            <div itemprop="openingHours" content="Mo-Fr 09:00-12:30">Lunedì-Venerdì 09:00-12:30</div>
+            <div itemprop="openingHours" content="Th 14:30-18:00">Giovedì 14:30-18:00</div>
+        </div>
         <div class="max-w-2xl mx-auto">
             <p class="text-gray-600 mb-4">
                 Questo sistema di ricerca è un progetto gratuito e open source, creato per supportare la Biblioteca
@@ -290,7 +307,7 @@
     </div>
 
     <!-- FAQ Section -->
-    <section class="mt-12 mb-8">
+    <section class="mt-12 mb-8" itemscope itemtype="https://schema.org/FAQPage">
         <div class="bg-white rounded-xl shadow-lg p-6">
             <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Domande Frequenti</h2>
             <div class="space-y-4">

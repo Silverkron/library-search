@@ -32,11 +32,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen">
-<div class="max-w-7xl mx-auto">
+<div class="max-w-7xl mx-auto" itemscope itemtype="https://schema.org/Library">
     <!-- Header Section -->
     <header class="text-center py-10 px-6">
-        <h1 class="text-4xl font-bold text-gray-800 mb-2">Aci Sant'Antonio Municipal Library</h1>
+        <h1 class="text-4xl font-bold text-gray-800 mb-2" itemprop="name">Aci Sant'Antonio Municipal Library</h1>
         <h2 class="text-xl text-gray-600 mb-4">Location</h2>
+        
+        <!-- Hidden microdata for library information -->
+        <div style="display: none;">
+            <span itemprop="description">Municipal Library of Aci Sant'Antonio located in the historic center.</span>
+            <span itemprop="url">https://biblioteca.acisantantonio.org</span>
+            <span itemprop="telephone">095 7010094</span>
+            <div itemprop="openingHours" content="Mo-Fr 09:00-12:30">Monday-Friday 09:00-12:30</div>
+            <div itemprop="openingHours" content="Th 14:30-18:00">Thursday 14:30-18:00</div>
+        </div>
         <div class="max-w-2xl mx-auto">
             <p class="text-gray-600 mb-4">
                 Discover how to reach our library, located in one of the most charming historical buildings in Aci Sant'Antonio.
@@ -78,12 +87,16 @@
                 <div class="space-y-6">
                     <div>
                         <h4 class="text-lg font-semibold text-blue-700 mb-2">Address</h4>
-                        <p class="text-gray-700 flex items-center">
+                        <p class="text-gray-700 flex items-center" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                            Via Vittorio Emanuele, 101 - 95025 Aci Sant'Antonio (CT)
+                            <span itemprop="streetAddress">Via Vittorio Emanuele, 101</span> - 
+                            <span itemprop="postalCode">95025</span> 
+                            <span itemprop="addressLocality">Aci Sant'Antonio</span> 
+                            (<span itemprop="addressRegion">CT</span>)
+                            <span style="display: none;" itemprop="addressCountry">IT</span>
                         </p>
                     </div>
                     
@@ -185,7 +198,7 @@
         </div>
         
         <!-- FAQ Section -->
-        <section class="mb-8">
+        <section class="mb-8" itemscope itemtype="https://schema.org/FAQPage">
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Frequently Asked Questions</h2>
                 <div class="space-y-4">
