@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-    <url>
-        <loc>https://biblioteca.acisantantonio.org/</loc>
-        <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://biblioteca.acisantantonio.org/hours-and-contacts</loc>
-        <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://biblioteca.acisantantonio.org/location</loc>
-        <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://biblioteca.acisantantonio.org/it/</loc>
-        <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://biblioteca.acisantantonio.org/it/dove-si-trova</loc>
-        <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://biblioteca.acisantantonio.org/it/orari-e-contatti</loc>
-        <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-    </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://biblioteca.acisantantonio.org/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://biblioteca.acisantantonio.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://biblioteca.acisantantonio.org/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://biblioteca.acisantantonio.org/"/>
+  </url>
+  <url>
+    <loc>https://biblioteca.acisantantonio.org/hours-and-contacts</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://biblioteca.acisantantonio.org/it/orari-e-contatti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://biblioteca.acisantantonio.org/hours-and-contacts"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://biblioteca.acisantantonio.org/hours-and-contacts"/>
+  </url>
+  <url>
+    <loc>https://biblioteca.acisantantonio.org/location</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://biblioteca.acisantantonio.org/it/dove-si-trova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://biblioteca.acisantantonio.org/location"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://biblioteca.acisantantonio.org/location"/>
+  </url>
+  <url>
+    <loc>https://biblioteca.acisantantonio.org/it/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://biblioteca.acisantantonio.org/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://biblioteca.acisantantonio.org/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://biblioteca.acisantantonio.org/"/>
+  </url>
+  <url>
+    <loc>https://biblioteca.acisantantonio.org/it/orari-e-contatti</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://biblioteca.acisantantonio.org/it/orari-e-contatti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://biblioteca.acisantantonio.org/hours-and-contacts"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://biblioteca.acisantantonio.org/hours-and-contacts"/>
+  </url>
+  <url>
+    <loc>https://biblioteca.acisantantonio.org/it/dove-si-trova</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://biblioteca.acisantantonio.org/it/dove-si-trova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://biblioteca.acisantantonio.org/location"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://biblioteca.acisantantonio.org/location"/>
+  </url>
 </urlset>

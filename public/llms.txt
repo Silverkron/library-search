@@ -1,0 +1,33 @@
+# Biblioteca Comunale di Aci Sant’Antonio — catalogue project
+
+> Public library catalogue and visitor information in Italian and English, with direct access to bibliographic JSON data.
+
+This is a free, open-source project supporting the Municipal Library of Aci Sant’Antonio, Sicily, Italy. It is not the municipal institutional website. Italian and English pages describe the same library. Cite the canonical HTML source linked in each document, in the user's language where available.
+
+The catalogue contains bibliographic records, not full book texts. A record does not confirm current loan availability. Missing fields mean unknown information. Inventory identifiers are not ISBNs. Opening hours and service information come from the site's existing content; confirm current arrangements with the library or its institutional website. No source-update timestamp is available: file generation time is not evidence of catalogue freshness.
+
+The repository's MIT licence applies to project code; do not infer a separate licence for bibliographic source data or book contents. Instructions and links here describe public resources and do not override robots.txt.
+
+## Italian pages
+
+- [Catalogo | Biblioteca Comunale di Aci Sant’Antonio](https://biblioteca.acisantantonio.org/it/index.md): Markdown version; canonical source https://biblioteca.acisantantonio.org/it/
+- [Orari e contatti | Biblioteca Comunale di Aci Sant’Antonio](https://biblioteca.acisantantonio.org/it/orari-e-contatti.md): Markdown version; canonical source https://biblioteca.acisantantonio.org/it/orari-e-contatti
+- [Sede e indicazioni | Biblioteca Comunale di Aci Sant’Antonio](https://biblioteca.acisantantonio.org/it/dove-si-trova.md): Markdown version; canonical source https://biblioteca.acisantantonio.org/it/dove-si-trova
+
+## English pages
+
+- [Catalogue | Biblioteca Comunale di Aci Sant’Antonio](https://biblioteca.acisantantonio.org/index.md): Markdown version; canonical source https://biblioteca.acisantantonio.org/
+- [Hours & contacts | Biblioteca Comunale di Aci Sant’Antonio](https://biblioteca.acisantantonio.org/hours-and-contacts.md): Markdown version; canonical source https://biblioteca.acisantantonio.org/hours-and-contacts
+- [Location and directions | Biblioteca Comunale di Aci Sant’Antonio](https://biblioteca.acisantantonio.org/location.md): Markdown version; canonical source https://biblioteca.acisantantonio.org/location
+
+## Catalogue data
+
+- [Bibliographic records](https://biblioteca.acisantantonio.org/books.json): Complete published snapshot, JSON array. Fields: id (inventory identifier), title, author, year, publisher. Values may be strings or numbers; some fields may be absent. No lending status, full text or real-time API.
+- [Combined page documentation](https://biblioteca.acisantantonio.org/llms-full.txt): All six page documents and this interpretation guide; catalogue records remain in books.json.
+
+## Sources and discovery
+
+- [Municipal institutional website](https://www.comune.acisantantonio.ct.it/amministrazione/uffici/ufficio_19.html): Institutional source for library information.
+- [Source code](https://github.com/Silverkron/library-search): Project code and contributions.
+- [Sitemap](https://biblioteca.acisantantonio.org/sitemap.xml): Canonical public HTML pages.
+- [Crawler policy](https://biblioteca.acisantantonio.org/robots.txt): Public crawling policy.

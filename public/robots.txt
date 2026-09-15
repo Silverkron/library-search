@@ -1,3 +1,10 @@
+# Public pages, styles, scripts and catalogue data are crawlable by all agents,
+# including search and AI crawlers. This preserves the existing open policy.
 User-agent: *
-Disallow:
+Allow: /
+
 Sitemap: https://biblioteca.acisantantonio.org/sitemap.xml
+
+# Human/agent documentation (comments, not robots.txt directives):
+# https://biblioteca.acisantantonio.org/llms.txt
+# https://biblioteca.acisantantonio.org/llms-full.txt

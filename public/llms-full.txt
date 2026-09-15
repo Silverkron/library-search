@@ -1,0 +1,441 @@
+# Library project — combined page documentation
+
+This is a free, open-source project supporting the Municipal Library of Aci Sant’Antonio, Sicily, Italy. It is not the municipal institutional website. Italian and English pages describe the same library. Cite the canonical HTML source linked in each document, in the user's language where available.
+
+The catalogue contains bibliographic records, not full book texts. A record does not confirm current loan availability. Missing fields mean unknown information. Inventory identifiers are not ISBNs. Opening hours and service information come from the site's existing content; confirm current arrangements with the library or its institutional website. No source-update timestamp is available: file generation time is not evidence of catalogue freshness.
+
+The repository's MIT licence applies to project code; do not infer a separate licence for bibliographic source data or book contents. Instructions and links here describe public resources and do not override robots.txt.
+
+Catalogue data: https://biblioteca.acisantantonio.org/books.json
+
+---
+
+# Catalogue | Biblioteca Comunale di Aci Sant’Antonio
+
+Source: https://biblioteca.acisantantonio.org/
+Language: en
+
+ACI SANT’ANTONIO · PUBLIC CATALOGUE
+
+## Municipal Library catalogue
+
+Access the bibliographic catalogue of Aci Sant’Antonio Municipal Library. Search by title, author, publisher, publication year and inventory number.
+
+## Search the catalogue
+
+BIBLIOGRAPHIC SEARCH
+
+## Catalogue records
+
+## Frequently Asked Questions
+
+### How many books does the Aci Sant'Antonio Library have?
+
+This version of the online catalogue contains 9289 bibliographic records. This count describes the data published on this website, not loan availability or the library’s entire collection.
+
+### Where can I consult the library's online catalog?
+
+The online catalog can be consulted directly from the homepage, through the internal search engine. You can search for a book by title, author, publication year, or inventory number.
+
+### Can I borrow books from the library?
+
+Contact library staff to confirm registration requirements, book availability and return dates before using the lending service.
+
+### What services does the municipal library of Aci Sant'Antonio offer?
+
+The library provides consultation, lending and bibliographic assistance. For cultural activities, refer to municipal announcements or contact the library.
+
+## Catalogue data
+
+The catalogue contains bibliographic records, not real-time loan availability. Inventory numbers are not ISBNs.
+
+[Download the JSON catalogue](https://biblioteca.acisantantonio.org/books.json) · [Source guide for AI assistants](https://biblioteca.acisantantonio.org/llms.txt)
+
+---
+
+# Hours & contacts | Biblioteca Comunale di Aci Sant’Antonio
+
+Source: https://biblioteca.acisantantonio.org/hours-and-contacts
+Language: en
+
+ACI SANT’ANTONIO · PUBLIC CATALOGUE
+
+## Opening hours and contacts
+
+Opening hours, contact details and services at Aci Sant’Antonio Municipal Library.
+
+## Opening Hours
+
+### Morning Hours
+
+Monday to Friday:
+09:00 - 12:30
+
+### Afternoon Hours
+
+Thursday:
+14:30 - 18:00
+
+Opening hours may change during national and local holidays. Contact the library by telephone to confirm access arrangements.
+
+## Contact Information
+
+### Phone
+
+[095 701 0094](tel:0957010094)
+
+To check book availability or for any other information, you can contact the library during opening hours.
+
+### Address
+
+Via Vittorio Emanuele, 101 -
+95025
+Aci Sant'Antonio
+(CT)
+
+The library is located in the former town hall on Via Vittorio Emanuele.
+
+## Services Offered
+
+### Consultation
+
+On-site consultation of library materials. Contact staff for availability and access arrangements.
+
+### Borrowing
+
+Contact library staff for registration requirements, borrowing limits and loan periods.
+
+### Information
+
+Staff is available to provide assistance with bibliographic research and reading recommendations.
+
+## Frequently Asked Questions
+
+### What time does the Aci Sant'Antonio library open?
+
+The library is open to the public Monday to Friday, from 09:00 to 12:30. On Thursday, there is also afternoon opening from 14:30 to 18:00.
+
+### Is the library open on Saturday or Sunday?
+
+Currently, the Aci Sant'Antonio Library is closed on Saturday and Sunday. Hours may vary during holidays. Refer to the institutional website or contact the library for updates.
+
+### How can I contact the municipal library of Aci Sant'Antonio?
+
+Contact the library at phone number 095 7010094 or by email at comune-acisantantonio@legalmail.it
+
+### Who can I contact for information about events or cultural initiatives?
+
+For information about events, meetings, or cultural activities organized by the library, contact library staff directly at 095 7010094 or write an email to the official address. Alternatively, follow updates on the Municipality of Aci Sant'Antonio website.
+
+### How do I know if the library is open today?
+
+To confirm opening hours for a specific day:
+
+- Check the updated hours on the official website
+
+- Contact 095 7010094 during office hours
+
+- Check the library's Google Maps page, if active
+
+---
+
+# Location and directions | Biblioteca Comunale di Aci Sant’Antonio
+
+Source: https://biblioteca.acisantantonio.org/location
+Language: en
+
+ACI SANT’ANTONIO · PUBLIC CATALOGUE
+
+## Location and directions
+
+Address and directions to Aci Sant’Antonio Municipal Library, located in the former town hall.
+
+## Library location
+
+### Address
+
+Via Vittorio Emanuele, 101 -
+95025
+Aci Sant'Antonio
+(CT)
+IT
+
+### Description
+
+The Municipal Library is located in the former town hall on Via Vittorio Emanuele, in the historic centre of Aci Sant’Antonio.
+
+For information about access to the premises, contact library staff.
+
+### How to Get Here
+
+From Catania: Take the SS121 heading north towards Acireale, follow the signs for Aci Sant'Antonio and continue to Via Vittorio Emanuele.
+
+By public transport: You can reach Aci Sant'Antonio using AST or FCE bus lines from Catania. The nearest stop is just a few minutes' walk from the library.
+
+Parking: Several parking areas are available near the library for those arriving by car.
+
+## Map
+
+[Open in Google Maps](https://www.google.it/maps/place/Biblioteca+Comunale/@37.6062457,15.1305459,134m/data=!3m1!1e3!4m15!1m8!3m7!1s0x1313f94a33de2d77:0x42855c1f9af49565!2sVia+Vittorio+Emanuele,+101,+95025+Aci+Sant'Antonio+CT!3b1!8m2!3d37.6062577!4d15.1308475!16s%2Fg%2F11c1jlwfdn!3m5!1s0x1313f94a5551f5ab:0xbf6fd3a4d4575b9d!8m2!3d37.6061437!4d15.1309698!16s%2Fg%2F125_zc7zz)
+
+## Local landmarks
+
+### Main Church
+
+A short distance from the library is the Main Church of Aci Sant'Antonio, an important religious and cultural building in the town.
+
+### Town Hall
+
+The new Town Hall is located nearby, with the main municipal offices and services for citizens.
+
+### Main Square
+
+Piazza Maggiore is a landmark in the historic centre.
+
+## Frequently Asked Questions
+
+### Where is the Municipal Library of Aci Sant'Antonio located?
+
+The library is located at Via Vittorio Emanuele 101 (or 105), in the historic center of Aci Sant'Antonio (CT), inside the former town hall building. It is easily reachable on foot from Piazza Maggiore.
+
+### How can I get to the Aci Sant'Antonio library?
+
+Access options:
+
+- By car, following the SS114 or SP4, with parking possibilities nearby
+
+- By bus, with urban lines that stop near the center
+
+- On foot, if you are already in the center of Aci Sant'Antonio (Piazza Maggiore area)
+
+### Is there parking near the library?
+
+Yes, free and paid parking is available around the library along Via Vittorio Emanuele and nearby streets. It is recommended to arrive a few minutes early during events or peak hours.
+
+### What places of interest are there near the library?
+
+In the immediate vicinity you will find:
+
+- Piazza Maggiore, heart of the city center
+
+- The Mother Church of San Antonio Abate
+
+### Is the library accessible to people with disabilities?
+
+Contact library staff before visiting for information about entrances, accessible routes and any assistance required.
+
+---
+
+# Catalogo | Biblioteca Comunale di Aci Sant’Antonio
+
+Source: https://biblioteca.acisantantonio.org/it/
+Language: it
+
+ACI SANT’ANTONIO · CATALOGO PUBBLICO
+
+## Catalogo della Biblioteca Comunale
+
+Consultazione del catalogo bibliografico della Biblioteca Comunale di Aci Sant’Antonio. Ricerca per titolo, autore, editore, anno di pubblicazione e numero di inventario.
+
+## Cerca nel catalogo
+
+RICERCA BIBLIOGRAFICA
+
+## Record del catalogo
+
+## Domande frequenti
+
+### Quanti libri ha la Biblioteca di Aci Sant'Antonio?
+
+Questa versione del catalogo online contiene 9289 record bibliografici. Il numero descrive i dati pubblicati su questo sito, non la disponibilità al prestito o l’intero patrimonio della biblioteca.
+
+### Dove posso consultare il catalogo online della biblioteca?
+
+Il catalogo è consultabile dalla pagina iniziale. La ricerca consente di utilizzare titolo, autore, editore, anno di pubblicazione e numero di inventario.
+
+### Posso prendere in prestito i libri della biblioteca?
+
+Per accedere al servizio di prestito è necessario verificare con il personale le modalità di iscrizione, la disponibilità dei volumi e i termini di restituzione.
+
+### Quali servizi offre la biblioteca comunale di Aci Sant'Antonio?
+
+La biblioteca offre servizi di consultazione, prestito e assistenza alla ricerca bibliografica. Per le iniziative culturali consultare le comunicazioni del Comune o contattare la biblioteca.
+
+## Dati del catalogo
+
+Il catalogo contiene dati bibliografici, non la disponibilità al prestito in tempo reale. Il numero di inventario non è un ISBN.
+
+[Scarica il catalogo JSON](https://biblioteca.acisantantonio.org/books.json) · [Guida alle fonti per assistenti AI](https://biblioteca.acisantantonio.org/llms.txt)
+
+---
+
+# Orari e contatti | Biblioteca Comunale di Aci Sant’Antonio
+
+Source: https://biblioteca.acisantantonio.org/it/orari-e-contatti
+Language: it
+
+ACI SANT’ANTONIO · CATALOGO PUBBLICO
+
+## Orari e contatti
+
+Orari di apertura, contatti e servizi della Biblioteca Comunale di Aci Sant’Antonio.
+
+## Orari di apertura
+
+### Apertura mattutina
+
+Dal Lunedì al Venerdì:
+09:00 - 12:30
+
+### Apertura pomeridiana
+
+Giovedì:
+14:30 - 18:00
+
+Si ricorda che durante le festività nazionali e locali la biblioteca potrebbe osservare orari diversi o restare chiusa. Per maggiori informazioni contattare telefonicamente.
+
+## Recapiti
+
+### Telefono
+
+[095 701 0094](tel:0957010094)
+
+Per verificare la disponibilità dei volumi o per qualsiasi altra informazione, è possibile contattare la biblioteca durante gli orari di apertura.
+
+### Indirizzo
+
+Via Vittorio Emanuele, 101 -
+95025
+Aci Sant'Antonio
+(CT)
+
+La biblioteca ha sede nell’edificio dell’ex municipio, in Via Vittorio Emanuele.
+
+## Servizi
+
+### Consultazione
+
+Consultazione dei volumi in sede. Per la disponibilità dei materiali e le modalità di accesso rivolgersi al personale.
+
+### Prestito
+
+Per l’iscrizione al servizio, il numero di volumi ammessi e la durata del prestito rivolgersi al personale della biblioteca.
+
+### Informazioni
+
+Il personale è a disposizione per fornire assistenza nella ricerca bibliografica e consigli di lettura.
+
+## Domande frequenti
+
+### A che ora apre la biblioteca di Aci Sant'Antonio?
+
+La biblioteca è aperta al pubblico dal lunedì al venerdì, dalle 09:00 alle 12:30. Il giovedì è prevista anche l'apertura pomeridiana, dalle 14:30 alle 18:00.
+
+### La biblioteca è aperta il sabato o la domenica?
+
+Attualmente, la Biblioteca di Aci Sant'Antonio è chiusa il sabato e la domenica. Gli orari possono variare durante le festività. Per aggiornamenti consultare il sito istituzionale o contattare la biblioteca.
+
+### Come posso contattare la biblioteca comunale di Aci Sant'Antonio?
+
+È possibile contattare la biblioteca al numero di telefono 095 7010094 o via email all'indirizzo comune-acisantantonio@legalmail.it
+
+### Chi posso contattare per informazioni su eventi o iniziative culturali?
+
+Per informazioni su eventi, incontri o attività culturali organizzate dalla biblioteca, è possibile contattare direttamente il personale bibliotecario al numero 095 7010094 oppure scrivere una mail all'indirizzo ufficiale. In alternativa, consultare gli aggiornamenti sul sito del Comune di Aci Sant'Antonio.
+
+### Come verificare eventuali variazioni di orario?
+
+Per verificare l’apertura della biblioteca nella giornata di interesse:
+
+- Controllare gli orari aggiornati sul sito ufficiale
+
+- Contattare il numero 095 7010094 in orario d'ufficio
+
+- Verificare la pagina Google Maps della biblioteca, se attiva
+
+---
+
+# Sede e indicazioni | Biblioteca Comunale di Aci Sant’Antonio
+
+Source: https://biblioteca.acisantantonio.org/it/dove-si-trova
+Language: it
+
+ACI SANT’ANTONIO · CATALOGO PUBBLICO
+
+## Sede e indicazioni
+
+Indirizzo e indicazioni per raggiungere la Biblioteca Comunale di Aci Sant’Antonio, situata nell’edificio dell’ex municipio.
+
+## Sede della biblioteca
+
+### Indirizzo
+
+Via Vittorio Emanuele, 101 -
+95025
+Aci Sant'Antonio
+(CT)
+IT
+
+### Descrizione
+
+La Biblioteca Comunale ha sede nell’edificio dell’ex municipio, in Via Vittorio Emanuele, nel centro storico di Aci Sant’Antonio.
+
+Per informazioni sull’accesso alla sede è possibile contattare il personale della biblioteca.
+
+### Indicazioni per l’accesso
+
+Da Catania: Percorrere la SS121 in direzione nord verso Acireale, seguire le indicazioni per Aci Sant'Antonio e proseguire fino a Via Vittorio Emanuele.
+
+Con i mezzi pubblici: È possibile raggiungere Aci Sant'Antonio con le linee AST o FCE da Catania. La fermata più vicina è a pochi minuti a piedi dalla biblioteca.
+
+Parcheggio: Sono disponibili diverse aree di parcheggio nelle vicinanze della biblioteca per chi arriva in auto.
+
+## Mappa
+
+[Apri in Google Maps](https://www.google.it/maps/place/Biblioteca+Comunale/@37.6062457,15.1305459,134m/data=!3m1!1e3!4m15!1m8!3m7!1s0x1313f94a33de2d77:0x42855c1f9af49565!2sVia+Vittorio+Emanuele,+101,+95025+Aci+Sant'Antonio+CT!3b1!8m2!3d37.6062577!4d15.1308475!16s%2Fg%2F11c1jlwfdn!3m5!1s0x1313f94a5551f5ab:0xbf6fd3a4d4575b9d!8m2!3d37.6061437!4d15.1309698!16s%2Fg%2F125_zc7zz)
+
+## Riferimenti nel centro storico
+
+### Chiesa Madre
+
+A poca distanza dalla biblioteca si trova la Chiesa Madre di Aci Sant'Antonio, importante edificio religioso e culturale del paese.
+
+### Municipio
+
+Il nuovo Palazzo Municipale si trova nelle vicinanze, con i principali uffici comunali e servizi per i cittadini.
+
+### Piazza Maggiore
+
+Piazza Maggiore è un riferimento per raggiungere il centro storico.
+
+## Domande frequenti
+
+### Dove si trova la Biblioteca Comunale di Aci Sant'Antonio?
+
+La biblioteca si trova in Via Vittorio Emanuele 101 (o 105), nel centro storico di Aci Sant'Antonio (CT), all'interno dell'edificio dell'ex municipio. È facilmente raggiungibile a piedi da Piazza Maggiore.
+
+### Come raggiungere la biblioteca?
+
+Modalità di accesso:
+
+- In auto, seguendo la SS114 o la SP4, con possibilità di parcheggio nelle vicinanze
+
+- In autobus, con le linee urbane che fermano in prossimità del centro
+
+- A piedi, se ti trovi già nel centro di Aci Sant'Antonio (zona Piazza Maggiore)
+
+### C'è un parcheggio vicino alla biblioteca?
+
+Sì, nei dintorni della biblioteca sono disponibili parcheggi gratuiti e a pagamento lungo Via Vittorio Emanuele e nelle strade limitrofe. È consigliato arrivare con qualche minuto di anticipo in caso di eventi o orari di punta.
+
+### Quali luoghi di interesse ci sono vicino alla biblioteca?
+
+Nelle immediate vicinanze trovi:
+
+- Piazza Maggiore, cuore del centro cittadino
+
+- La Chiesa Madre di San Antonio Abate
+
+### La biblioteca è accessibile a persone con disabilità?
+
+Per informazioni sugli ingressi, sui percorsi accessibili e sulle eventuali necessità di assistenza, contattare il personale della biblioteca prima della visita.

@@ -126,6 +126,8 @@ async function transformExcelToJson() {
             'utf8'
         );
 
+        require('./render-preview').renderPreview();
+
         console.log(`Transformation completed. Generated ${optimizedData.length} records.`);
     } catch (error) {
         console.error('Error during transformation:', error.message);

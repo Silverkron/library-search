@@ -7,7 +7,9 @@
     "transform": "node scripts/transform.js",
     "serve": "serve public",
     "build": "npm run transform",
-    "dev": "npm run transform && npm run serve"
+    "dev": "npm run transform && npm run serve",
+    "build:pages": "node scripts/render-preview.js",
+    "test": "node scripts/check-site.js"
   },
   "dependencies": {
     "xlsx": "^0.18.5"
